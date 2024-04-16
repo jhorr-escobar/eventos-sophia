@@ -1,0 +1,215 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+
+
+
+
+nav {
+    background: rgb(238, 174, 209);
+    background: linear-gradient(90deg, rgba(238, 174, 209, 0.8407738095238095) 0%, rgba(95, 39, 102, 0.9416141456582633) 100%);
+    height: 50px;
+    width: 100%;
+}
+
+.enlace {
+    position: absolute;
+}
+
+.fa-bars {
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.logo {
+    height: 44px;
+
+}
+
+nav ul {
+    float: right;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 5px;
+
+}
+
+nav ul li a {
+    color: #fff;
+    font-size: 20px;
+    padding: 7px 13px;
+    border-radius: 13px;
+    text-transform: uppercase;
+}
+
+li a.active,
+li a:hover {
+    background: #AB47BC;
+    transition: .5s;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: bisque;
+    float: right;
+    margin-right: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+@media (max-width: 952px) {
+    .enlace {
+        padding-left: 20px;
+
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width:858px) {
+    .checkbtn {
+        display: block;
+
+        ul {
+            position: fixed;
+            width: 100%;
+            height: 100vh;
+
+        }
+    }
+}
+
+
+.grid {
+    width: 200px;
+    height: 200px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1em;
+    display: grid;
+    text-align: center;
+    display border: 0;
+}
+
+.grid div {
+    padding: 1em;
+    box-shadow: 0 5px 6px -3px rgba(0, 0, 0, .2), 0 9px 12px 1px rgba(0, 0, 0, .14), 0 3px 16px 2px rgba(0, 0, 0, .12) !important;
+}
+
+.titulo {
+    text-align: center;
+}
+
+.titulo {
+    text-align: center;
+}
+
+
+
+img {
+    width: 270px;
+    height: 200px;
+    object-fit: cover;
+
+}
+
+.logotipo {
+    width: 70px;
+    height: 80px;
+    object-fit: cover;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: beige;
+}
+
+.contenedor-footer {
+    max-width: 1200px;
+    margin: 0;
+    width: 78%;
+    /*Se ajusta en widht del 78% para que quede centrado tanto de derecha e izquierda */
+
+
+}
+
+.footer {
+    background-color: #24262B;
+    padding: 20px 0;
+    /* padding 20px (Establece arriba y abajo) - 0px ( establece derecha izquierda)*/
+    display: flex;
+    /* Se habilita flexbox*/
+    justify-content: center;
+    /* Se utiliza propiedad para centrar todo el contenido dentro del div*/
+}
+
+.footer-fila {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-links {
+    width: 25%;
+    padding: 0 15 px;
+
+}
+
+.footer-links h4 {
+    font-size: 20px;
+    color: white;
+    margin-bottom: 25px;
+    font-weight: 500;
+    border-bottom: 2px solid #00c4ff;
+    padding-bottom: 10px;
+    display: inline-block;
+
+}
+
+.footer-links ul a {
+
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+    display: block;
+    margin-bottom: 15px;
+    transition: all .3s ease;
+
+
+}
+
+.footer-links ul li a {
+
+    color: white;
+    padding-left: 6px;
+
+
+}
+
+.social link a {
+    display: inline-block;
+    min-height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #FFFFFF;
+    transition: all .5s ease;
+}
